@@ -4,8 +4,8 @@ echo "[server-login]" > ~/.pypirc
 echo "username:" ${PYPI_USER} >> ~/.pypirc
 echo "password:" ${PYPI_PASSWORD} >> ~/.pypirc
 
-version=`python -c 'from w3af_api_client import __VERSION__;print __VERSION__,'`
-curl -f -s -S -k -X GET -I https://pypi.python.org/packages/source/w/w3af-api-client/w3af-api-client-$version.tar.gz
+version=`python -c 'from w3af_api_client import __version__;print __version__,'`
+curl -f -s -S -k -X GET -I https://pypi.python.org/packages/source/w/elmo-w3af-api-client/elmo-w3af-api-client-$version.tar.gz
 
 if [[ $? -eq 0 ]]
 then

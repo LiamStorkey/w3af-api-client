@@ -5,7 +5,7 @@ from w3af_api_client.traffic import Traffic
 
 class MockFinding(Finding):
     """
-    A wrapper around the finding to help test w3af-api-client implementations
+    A wrapper around the finding to help test elmo-w3af-api-client implementations
     """
     DATA = {'url': 'http://www.w3af.org/',
             'var': 'id',

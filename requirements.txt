@@ -5,3 +5,5 @@
 future==0.18.2
 requests==2.22.0
 six==1.13.0
+setuptools
+urllib3

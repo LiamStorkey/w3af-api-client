@@ -15,7 +15,7 @@ else:
     import httplib as http_client
 
 
-from w3af_api_client import __VERSION__
+from w3af_api_client import __version__
 from w3af_api_client.utils.constants import ISSUE_URL
 from w3af_api_client.scan import Scan
 from w3af_api_client.utils.exceptions import (APIException,
@@ -102,7 +102,7 @@ class Connection(object):
 
         headers = {'Content-Type': 'application/json',
                    'Accept': 'application/json',
-                   'User-Agent': 'REST API Client %s' % __VERSION__}
+                   'User-Agent': 'REST API Client %s' % __version__}
         self.session.headers.update(headers)
 
     def send_request(self, path, json_data=None, method='GET'):

@@ -3,17 +3,17 @@ REST API client for w3af
 
 Launch web application security scans using `w3af's REST API <http://docs.w3af.org/en/latest/api/index.html>`_
 
-.. image:: https://circleci.com/gh/andresriancho/w3af-api-client.svg?style=svg
+.. image:: https://circleci.com/gh/andresriancho/elmo-w3af-api-client.svg?style=svg
    :alt: Build Status
    :align: right
-   :target: https://circleci.com/gh/andresriancho/w3af-api-client
+   :target: https://circleci.com/gh/andresriancho/elmo-w3af-api-client
 
 Installation
 ============
 
 ::
 
-    $ pip install --upgrade w3af-api-client
+    $ pip install --upgrade elmo-w3af-api-client
 
 
 Usage
@@ -48,13 +48,13 @@ Source code
 Developers love code, here's all you need to understand, use and extend the client:
 
 * `w3af's REST API server <https://github.com/andresriancho/w3af/tree/master/w3af/core/ui/api/>`_
-* `w3af's REST API client <https://github.com/andresriancho/w3af-api-client/>`_
+* `w3af's REST API client <https://github.com/andresriancho/elmo-w3af-api-client/>`_
 
 Reporting bugs
 ==============
 
-Report your issues and feature requests in `w3af-api-client's issue
-tracker <https://github.com/andresriancho/w3af-api-client>`_ and we'll
+Report your issues and feature requests in `elmo-w3af-api-client's issue
+tracker <https://github.com/andresriancho/elmo-w3af-api-client>`_ and we'll
 be more than glad to fix them.
 
 Pull requests are more than welcome!

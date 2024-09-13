@@ -11,9 +11,6 @@ from os.path import basename, dirname, join, splitext
 # Third Party Libraries
 from setuptools import find_packages, setup
 
-# My stuff
-from w3af_api_client import __VERSION__
-
 
 if os.environ.get('CIRCLECI', None) is not None:
     # monkey-patch distutils upload
@@ -25,7 +22,7 @@ if os.environ.get('CIRCLECI', None) is not None:
 
         old_upload_module.upload = fixed_upload
     except ImportError:
-        # In some cases I install w3af-api-client in CircleCI, but not from the
+        # In some cases I install elmo-w3af-api-client in CircleCI, but not from the
         # repository where the ci module is present
         pass
 
@@ -56,9 +53,8 @@ def requires(filename):
 
 
 setup(
-    name='w3af-api-client',
+    name='elmo-w3af-api-client',
 
-    version=__VERSION__,
     license='GNU General Public License v2 (GPLv2)',
     platforms='Linux',
 
@@ -67,12 +63,18 @@ setup(
 
     author='Andres Riancho',
     author_email='andres.riancho@gmail.com',
-    url='https://github.com/andresriancho/w3af-api-client/',
+    url='https://github.com/andresriancho/elmo-w3af-api-client/',
 
-    packages=find_packages('w3af_api_client'),
-    package_dir={'': 'w3af_api_client'},
+    packages=find_packages(),
+    py_modules=["w3af_api_client"],
     include_package_data=True,
-    install_requires=requires('requirements.txt'),
+    install_requires=[
+        "future==0.18.2",
+        "requests==2.22.0",
+        "six==1.13.0",
+        "setuptools",
+        "urllib3"
+    ],
 
     # https://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[

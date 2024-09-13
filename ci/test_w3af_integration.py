@@ -15,7 +15,7 @@ class TestW3afIntegration(unittest.TestCase):
     def test_integration(self):
         """
         The main goal of this test is to assert that the latest version of w3af
-        can be consumed using the latest version of w3af-api-client.
+        can be consumed using the latest version of elmo-w3af-api-client.
         """
         conn = Connection(self.W3AF_API_URL, verbose=False)
         print('Created REST API connection')
